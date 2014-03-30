@@ -145,7 +145,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
-  width: 60%;
+  width: 55%;
 }
 #page.wide > .container,
 #topbar.wide > .container {
@@ -207,8 +207,6 @@ div#blog .read a {
 
 div#menu {
   float: right;
-  min-width: 590px;
-  /*padding: 10px 0;*/
   text-align: right;
   margin: 0 0 10px 0;
   padding: 22px 0;
@@ -636,4 +634,22 @@ div#playground .output {
 }
 #content .title {
   margin: 20px 0;
+}
+/*-----RESPONSIVE-------*/
+
+/* responsive */
+@media (max-width: 768px) {
+	#menu {
+		display:none;
+	}
+  #page > .container,
+  #topbar > .container{
+    width:90%;
+  }
+	#content{
+    width:100%;
+  }
+  #sidebar{
+    width: 100%;
+  }
 }
